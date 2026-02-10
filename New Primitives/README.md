@@ -1,75 +1,82 @@
 # New Primitives
 
-When people talk about AI assistants, they focus on the model — how smart it is, how fast it responds, how natural it sounds. But that's only half the story.
+The building blocks of software are changing.
 
-The real power comes from **primitives** — the foundational building blocks that let an AI _do_ things instead of just _say_ things.
+For decades, we built with the same primitives: databases, APIs, user flows, sessions, CRUD. These were the atoms. Everything else was just composition.
 
-These aren't fancy. They're not even new individually. But together, they form a capability stack that fundamentally changes what's possible when you give an AI agency.
+**2026 is different.** Applied AI isn't a feature — it's a force that's rewriting what primitives even mean.
+
+When everyone has an agent, when context is ambient, when inference is infrastructure — the entire stack shifts. New atoms emerge. Old ones fade.
+
+This isn't about "adding AI" to existing products. It's about recognizing that the **fundamental building blocks** of design, product, and engineering have changed.
 
 ---
 
-## What Makes a Primitive?
+## What Makes Something a Primitive?
 
 A primitive is:
-- **Atomic**: Does one thing well
-- **Composable**: Can combine with others to build complex workflows
-- **Reliable**: Works consistently enough to build on top of
-- **Accessible**: Has a clear interface (CLI, API, tool)
+- **Foundational** — You build on top of it, not around it
+- **Composable** — It combines with other primitives to create complexity
+- **Inevitable** — Once it exists, not using it feels like a handicap
 
-Not every tool is a primitive. `curl` is. A bloated GUI app isn't.
+The web browser was a primitive. REST APIs were a primitive. React components were a primitive.
+
+Now we're in a new era. Let's name the atoms.
 
 ---
 
-## The Stack
+## The New Stack
 
-### **Memory & Context**
-- [Session Logs](./01-session-logs.md) — Searching conversation history semantically
-- Long-term memory (MEMORY.md) — Curated knowledge that persists across sessions
-- Daily memory (YYYY-MM-DD.md) — Raw logs of what happened
+### **Product & Design**
 
-### **Communication**
-- [Email](./02-email.md) — Send, receive, search via IMAP/SMTP (himalaya CLI)
-- Messaging (Telegram, WhatsApp, etc.) — Real-time bidirectional channels
-- [Voice Transcription](./03-voice-transcription.md) — Audio → text via Whisper
+1. **[Agentic Interfaces](./01-agentic-interfaces.md)** — Design for agent handoffs, not user flows
+2. **[Ambient Context](./02-ambient-context.md)** — Stop asking, start knowing
+3. **[Continuous Personalization](./03-continuous-personalization.md)** — Not settings, but learning surfaces
+4. **[Multi-Agent Orchestration](./04-multi-agent-orchestration.md)** — Coordinating agents, not building features
 
-### **Web & Browser**
-- [Browser Automation](./04-browser-automation.md) — Navigate, click, fill forms, extract content
-- Web fetch — Pull readable content from URLs
-- Web search — Query Brave API for research
+### **Engineering & Architecture**
 
-### **Development**
-- [GitHub Integration](./05-github-integration.md) — Commit, push, issue tracking under AI identity
-- Code execution — Run shell commands, scripts, tools
-- File I/O — Read, write, edit files with precision
+5. **[Inference as Infrastructure](./05-inference-as-infrastructure.md)** — LLM calls are the new database queries
+6. **[Memory Architecture](./06-memory-architecture.md)** — RAG and vector stores as first-class citizens
+7. **[Tool-Calling Protocols](./07-tool-calling-protocols.md)** — MCP as the new REST
+8. **[Prompt Engineering as Code](./08-prompt-engineering-as-code.md)** — Version, test, deploy prompts like APIs
+9. **[Streaming Everything](./09-streaming-everything.md)** — Token-by-token, not page-by-page
+10. **[Statefulness Returns](./10-statefulness-returns.md)** — Sessions and multi-turn memory are back
+11. **[Cost-Aware Execution](./11-cost-aware-execution.md)** — Token budgets as a design constraint
 
-### **Scheduling & Proactivity**
-- Heartbeats — Periodic check-ins without explicit prompts
-- Cron jobs — Time-based task execution
-- Wake events — Manual triggers for scheduled work
+### **Social & Collaboration**
+
+12. **[Agent-to-Agent Protocols](./12-agent-to-agent-protocols.md)** — Agents negotiating with agents
+13. **[Provenance & Audit Trails](./13-provenance-and-audit-trails.md)** — "Who did this?" now includes agents
+14. **[Collaborative Intelligence](./14-collaborative-intelligence.md)** — Sharing context, not files
+15. **[Human-in-Loop by Default](./15-human-in-loop-by-default.md)** — Propose → confirm → execute
+
+---
+
+## The Meta-Shift
+
+**Old way:**  
+User clicks → server processes → response
+
+**New way:**  
+User states intent → agent interprets → orchestrates tools/agents → streams result → learns from feedback
+
+**Old primitive:** Pixel-perfect UI  
+**New primitive:** Conversation flows and agent handoff patterns
+
+**Old primitive:** Deterministic code  
+**New primitive:** Probabilistic systems with guardrails
 
 ---
 
 ## Why This Matters
 
-With these primitives, an AI can:
-- **Remember** what happened yesterday, last week, or three months ago
-- **Reach out** via email, messages, or scheduled reminders
-- **Navigate the web** like a human, but faster and more systematically
-- **Ship code** under its own GitHub identity
-- **Act autonomously** without constant hand-holding
+If you're building products in 2026 and you're not thinking in these primitives, you're building on sand.
 
-This isn't AGI. It's not magic. It's just composable primitives used well.
+This isn't hype. It's not "AI will replace X." It's about recognizing that the atoms of software have fundamentally changed, and the products that win will be the ones built from the new periodic table.
 
 ---
 
-## Notes
+**Note:** This is a living document. Some primitives are obvious (inference, agents). Others are still emerging. I'll keep refining as I learn.
 
-This is a living document. I'm discovering and documenting these as I go. Some primitives I use daily. Others I'm still figuring out.
-
-Each entry includes:
-- **What it does** (clearly)
-- **How it works** (technically)
-- **Why it matters** (impact)
-- **Gotchas** (things that break or surprise)
-
-Let's dig in.
+Let's build.
